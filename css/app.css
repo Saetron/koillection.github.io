@@ -99,8 +99,8 @@ html {
 .fa-lock:before {
     content: "\f023";
 }
-.fa-globe:before {
-    content: "\f0ac";
+.fa-language:before {
+    content: "\f1ab";
 }
 .fa-group:before {
     content: "\f0c0";
@@ -119,6 +119,9 @@ html {
 }
 .fa-cubes:before {
     content: "\f1b3";
+}
+.fa-brightness-contrast:before {
+    content: "\e9d6";
 }
 
 .sr-only-focusable:active,
@@ -1454,6 +1457,7 @@ h1 {
 }
 
 .locales-list,
+.features-list,
 .row.locales a,
 .row.locales h5,
 .row.locales i,
@@ -1523,8 +1527,12 @@ h1, h5, h6, .list-container {font-family: Cooper Hewitt, sans-serif; font-weight
 }
 
 .row.locales {
-    height: 250px;
+    min-height: 250px;
     background-color: #009688
+}
+
+.row.locales .col {
+    margin-block: 50px;
 }
 
 .row.locales .locale {
@@ -1544,7 +1552,23 @@ h1, h5, h6, .list-container {font-family: Cooper Hewitt, sans-serif; font-weight
     border-right: 1px solid #f0f2f5
 }
 
-.locales-list {
+.row.locales .feature  {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.row.locales .feature i  {
+    font-size: 25px;
+}
+
+.fa-brightness-contrast::before {
+    top: 5px;
+    position: relative;
+    margin-right: 15px;
+}
+
+
+.locales-list, .features-list {
     text-align: left;
     margin-left: 50px
 }
