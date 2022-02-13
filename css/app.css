@@ -123,6 +123,9 @@ html {
 .fa-brightness-contrast:before {
     content: "\e9d6";
 }
+.fa-rocket:before {
+  content: "\f135";
+}
 
 .sr-only-focusable:active,
 .sr-only-focusable:focus {
@@ -1561,7 +1564,7 @@ h1, h5, h6, .list-container {font-family: Cooper Hewitt, sans-serif; font-weight
     font-size: 25px;
 }
 
-.fa-brightness-contrast::before {
+.fa-brightness-contrast::before, .fa-rocket::before {
     top: 5px;
     position: relative;
     margin-right: 15px;
